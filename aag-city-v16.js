@@ -1185,7 +1185,7 @@ for(i=0;i<n;i++){
 x=b.x+5+(i+0.5)*((b.w-10)/n)-ww/2;
 if(doorSide==='s'){if(z<15){if(Math.abs(x+ww/2-(b.x+b.w/2))<8) continue;}}
 glass=glassAt(i,r,b.x);
-vface(x-0.4,b.y+b.h,x+ww+0.4,b.y+b.h,z-0.3,z+wh+0.3,'#2a2a2a'); vface(x,b.y+b.h,x+ww,b.y+b.h,z,z+wh,glass);
+vface(x,b.y+b.h,x+ww,b.y+b.h,z,z+wh,glass);
 }
 }
 }
@@ -1199,7 +1199,7 @@ z=7+r*((ht-12)/rows);
 for(i=0;i<n;i++){
 x=b.x+5+(i+0.5)*((b.w-10)/n)-ww/2;
 if(doorSide==='n'){if(z<15){if(Math.abs(x+ww/2-(b.x+b.w/2))<8) continue;}}
-vface(x-0.4,b.y,x+ww+0.4,b.y,z-0.3,z+wh+0.3,'#2a2a2a'); vface(x,b.y,x+ww,b.y,z,z+wh,glassAt(i,r,b.y));
+vface(x,b.y,x+ww,b.y,z,z+wh,glassAt(i,r,b.y));
 }
 }
 }
@@ -1587,7 +1587,7 @@ cx=x+ww*0.5;
 if(cx>=x0){if(cx<=x1){
 if(doorSide===side){if(z<16){if(Math.abs(cx-(b.x+b.w*0.5))<11){i++; continue;}}}
 glass=glassAt(i,r,b.x+r*3);
-if(side==='s') vface(x-0.4,b.y+b.h,x+ww+0.4,b.y+b.h,z-0.3,z+wh+0.3,'#2a2a2a'); vface(x,b.y+b.h,x+ww,b.y+b.h,z,z+wh,glass);
+if(side==='s') vface(x,b.y+b.h,x+ww,b.y+b.h,z,z+wh,glass);
 else vface(x,b.y,x+ww,b.y,z,z+wh,glass);
 }}
 i++;
